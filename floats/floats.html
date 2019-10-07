@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Floats</title>
+    <link rel='stylesheet' href='styles.css' />
+</head>
+<!-- Try taking menu and footer out of .page element
+  <body>
+    <div class='page'>
+      <div class='menu'>Menu</div>
+      <div class='sidebar'>Sidebar</div>
+      <div class='content'>Content</div>
+      <div class='footer'>Footer -“Clearing” a float is when we tell a block to ignore 
+          any floats that appear before it. Instead of flowing around the floated box, 
+          a cleared element always appears after any floats.</div>
+    </div>
+  </body>   -->
+
+<body>
+    <div class='menu'>Menu</div>
+
+    <div class='container'>
+        <div class='page'>
+            <div class='sidebar'>Sidebar</div>
+            <div class='content'>
+                <img src='?' class='article-image' />
+
+                <p>Ad netus sagittis velit orci est non ut urna taciti metus donec magnis
+                    hendrerit adipiscing mauris sit a proin ultrices nibh.</p>
+
+                <p>Enim suspendisse ac scelerisque nascetur vestibulum parturient sed mi a
+                    dolor eu non adipiscing non neque scelerisque netus ullamcorper sed
+                    parturient integer.Eros dui risus non sodales ullamcorper libero a dis
+                    cubilia a orci iaculis cursus.</p>
+
+                <p>Egestas at aliquam a egestas accumsan cum elementum consectetur conubia
+                    tristique eu et vitae condimentum in ante consectetur suscipit a a duis
+                    vestibulum gravida morbi sagittis.Parturient scelerisque facilisis
+                    ullamcorper a a pretium a nisl parturient semper senectus accumsan ipsum
+                    mus scelerisque eget ridiculus.Accumsan dolor a.</p>
+
+                <p>Ligula taciti vel primis sit a tincidunt habitant parturient parturient
+                    in parturient ante nulla consectetur sem.Facilisis parturient litora.</p>
+
+                <!-- Content
+                <p>As in the previous section, we still need the overflow: hidden line to force the .container to pay
+                    attention to the height of the floated elements. Without it, we wouldn’t see our background color
+                    because .container would have zero height. </p>
+
+                <p>This gives us three nested div elements just for laying out our page: a .container wrapper for
+                    full-bleed background color, a fixed-width .page for centering everything, and finally
+                    left-aligned .sidebar and .content blocks. This kind of nesting and aligning is pretty typical
+                    of most website layouts.</p>
+                    -->
+            </div>
+        </div>
+    </div>
+
+    <div class='footer'>
+        <!-- 
+        <p> Footer- Moving the footer outside of the .page container broke our clear fix. </p>
+        <p> By adding an overflow: hidden declaration to a container div, we’re telling it to recognize the height of
+            any floated elements it contains. </p>
+        <p> To summarize, when you have an extra unfloated HTML element at the bottom of a container div, use the clear
+            solution. Otherwise, add an overflow: hidden declaration to the container element.</p>
+        -->
+        <div class='column'></div> <!-- Better to rename footer item than column -->
+        <div class='column'>
+            <div class='avatar'></div>
+            <h3 class='username'>Bob Smith</h3>
+            <p class='comment'>Aptent vel egestas vestibulum aliquam ullamcorper volutpat
+                ullamcorper pharetra hac posuere a rhoncus purus molestie torquent. Scelerisque
+                purus cursus dictum ornare a phasellus. A augue venenatis adipiscing.</p></div>
+        <div class='column'></div>
+        <div class='column'></div>
+        <div class='column'></div>
+        <div class='column'></div>
+    </div>
+</body>
+
+</html>
