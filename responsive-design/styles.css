@@ -4,6 +4,8 @@
     box-sizing: border-box;
   }
 
+/* Base Styles */
+
   .page {
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +48,28 @@
   .feature-3 {
     background-color: #C8C6FA;
   }
+  /* (for svg image)
+  .illustration {
+    width: 100%;
+  }
+*/
+
+  .illustration img {
+   width: 100%;
+   display: block;
+  }
+  
+  .header {
+    height: auto;
+    justify-content: inherit;
+    align-items: inherit;
+  }
+  
+  .photo img {
+    width: 100%;
+    display: block;
+  }
+
   /*
    Mobile Styles 
   @media only screen and (max-width: 400px) {
